@@ -1,5 +1,6 @@
-# hadoop_word_count
-Simple Word Counting Project with Apache Hadoop on macOS Monterey 12.6
+# hadoop_practice
+Several practices with Apache Hadoop on macOS Monterey 12.6
+1) WordCount; Simple Word Counting Project
 
 ## java version
 $ /usr/libexec/java_home
