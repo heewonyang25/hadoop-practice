@@ -4,7 +4,7 @@ Several practices with Apache Hadoop on macOS Monterey 12.6
 
 ## java version
 $ /usr/libexec/java_home
-/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home
+> /Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home
 
 ## hadoop installation on macOS
 Single Node Setup WITH 'Pseudo-Distributed Mode'
