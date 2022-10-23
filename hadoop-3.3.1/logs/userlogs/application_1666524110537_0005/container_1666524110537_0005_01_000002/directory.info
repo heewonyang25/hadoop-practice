@@ -1,0 +1,24 @@
+ls -l:
+total 40
+-rw-r--r--  1 yangheewon  wheel   129 10 23 20:33 container_tokens
+-rwx------  1 yangheewon  wheel   753 10 23 20:33 default_container_executor.sh
+-rwx------  1 yangheewon  wheel   691 10 23 20:33 default_container_executor_session.sh
+lrwxr-xr-x  1 yangheewon  wheel   117 10 23 20:33 job.jar -> /tmp/hadoop-yangheewon/nm-local-dir/usercache/yangheewon/appcache/application_1666524110537_0005/filecache/11/job.jar
+lrwxr-xr-x  1 yangheewon  wheel   117 10 23 20:33 job.xml -> /tmp/hadoop-yangheewon/nm-local-dir/usercache/yangheewon/appcache/application_1666524110537_0005/filecache/13/job.xml
+-rwx------  1 yangheewon  wheel  5491 10 23 20:33 launch_container.sh
+drwx--x---  2 yangheewon  wheel    64 10 23 20:33 tmp
+find -L . -maxdepth 5 -ls:
+50223419        0 drwx--x---   13 yangheewon       wheel                 416 10 23 20:33 .
+50223424       16 -rwx------    1 yangheewon       wheel                5491 10 23 20:33 ./launch_container.sh
+50223426        8 -rwx------    1 yangheewon       wheel                 691 10 23 20:33 ./default_container_executor_session.sh
+50223423        8 -rw-r--r--    1 yangheewon       wheel                  12 10 23 20:33 ./.container_tokens.crc
+50223422        8 -rw-r--r--    1 yangheewon       wheel                 129 10 23 20:33 ./container_tokens
+50223425        8 -rw-r--r--    1 yangheewon       wheel                  52 10 23 20:33 ./.launch_container.sh.crc
+50223428        8 -rwx------    1 yangheewon       wheel                 753 10 23 20:33 ./default_container_executor.sh
+50223427        8 -rw-r--r--    1 yangheewon       wheel                  16 10 23 20:33 ./.default_container_executor_session.sh.crc
+50223357      456 -r-x------    1 yangheewon       wheel              233185 10 23 20:33 ./job.xml
+50223421        0 drwx--x---    2 yangheewon       wheel                  64 10 23 20:33 ./tmp
+50223429        8 -rw-r--r--    1 yangheewon       wheel                  16 10 23 20:33 ./.default_container_executor.sh.crc
+50223351        0 drwx------    3 yangheewon       wheel                  96 10 23 20:33 ./job.jar
+50223352        8 -r-x------    1 yangheewon       wheel                3076 10 23 20:33 ./job.jar/job.jar
+broken symlinks(find -L . -maxdepth 5 -type l -ls):

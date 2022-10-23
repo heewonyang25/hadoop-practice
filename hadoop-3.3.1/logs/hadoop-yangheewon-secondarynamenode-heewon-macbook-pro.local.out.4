@@ -1,0 +1,21 @@
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+file size               (blocks, -f) unlimited
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 256
+pipe size            (512 bytes, -p) 1
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 2784
+virtual memory          (kbytes, -v) unlimited
+java.io.IOException: Inconsistent checkpoint fields.
+LV = -66 namespaceID = 1321219834 cTime = 1666518411457 ; clusterId = CID-a26f4a4f-c415-4e4d-b52e-cbfcadec6943 ; blockpoolId = BP-2074641146-127.0.0.1-1666518411457.
+Expecting respectively: -66; 903379514; 1666503779547; CID-bcbee167-0eef-40b8-8a8e-f4a2c1420fdf; BP-761359217-127.0.0.1-1666503779547.
+	at org.apache.hadoop.hdfs.server.namenode.CheckpointSignature.validateStorageInfo(CheckpointSignature.java:143)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:550)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:360)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:325)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:503)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:834)

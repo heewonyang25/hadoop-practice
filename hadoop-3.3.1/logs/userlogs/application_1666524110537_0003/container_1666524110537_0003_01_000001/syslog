@@ -1,0 +1,467 @@
+2022-10-23 20:25:55,121 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Created MRAppMaster for application appattempt_1666524110537_0003_000001
+2022-10-23 20:25:55,197 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: 
+/************************************************************
+[system properties]
+os.name: Mac OS X
+os.version: 10.16
+java.home: /Library/Java/JavaVirtualMachines/jdk-11.0.6.jdk/Contents/Home
+java.runtime.version: 11.0.6+8-LTS
+java.vendor: Oracle Corporation
+java.version: 11.0.6
+java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+java.class.path: /tmp/hadoop-yangheewon/nm-local-dir/usercache/yangheewon/appcache/application_1666524110537_0003/container_1666524110537_0003_01_000001:/Users/yangheewon/hadoop-3.3.1/etc/hadoop:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/hadoop-nfs-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/hadoop-common-3.3.1-tests.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/hadoop-common-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/hadoop-registry-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/hadoop-kms-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jetty-util-ajax-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/hadoop-auth-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/curator-framework-4.2.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jackson-core-2.10.5.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-io-2.8.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/slf4j-log4j12-1.7.30.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jetty-webapp-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/htrace-core4-4.1.0-incubating.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/failureaccess-1.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/checker-qual-2.5.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/curator-client-4.2.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/httpcore-4.4.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/slf4j-api-1.7.30.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/snappy-java-1.1.8.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-logging-1.1.3.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/hadoop-annotations-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/woodstox-core-5.3.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/avro-1.7.7.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/dnsjava-2.1.7.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jetty-io-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerb-server-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/hadoop-shaded-guava-1.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/log4j-1.2.17.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-cli-1.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/guava-27.0-jre.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/stax2-api-4.2.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerby-config-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jetty-server-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jetty-util-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerb-util-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jersey-json-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jersey-servlet-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jul-to-slf4j-1.7.30.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/zookeeper-jute-3.5.6.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jetty-servlet-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jakarta.activation-api-1.2.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/curator-recipes-4.2.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/metrics-core-3.2.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/accessors-smart-2.4.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jsp-api-2.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-codec-1.11.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/asm-5.0.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/paranamer-2.3.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerb-client-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-collections-3.2.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jettison-1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/netty-3.10.6.Final.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-compress-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jackson-databind-2.10.5.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/token-provider-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jetty-http-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jersey-core-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerb-common-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-text-1.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jackson-annotations-2.10.5.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jersey-server-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jsch-0.1.55.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/re2j-1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/gson-2.2.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jetty-xml-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerb-core-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/nimbus-jose-jwt-9.8.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/httpclient-4.5.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-net-3.6.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-lang3-3.7.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/kerby-util-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jsr305-3.0.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-math3-3.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/jetty-security-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/commons-daemon-1.0.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/json-smart-2.4.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/common/lib/zookeeper-3.5.6.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/hadoop-hdfs-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/hadoop-hdfs-client-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/hadoop-hdfs-3.3.1-tests.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/hadoop-hdfs-client-3.3.1-tests.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/hadoop-hdfs-nfs-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.1-tests.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.1-tests.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/hadoop-auth-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/curator-framework-4.2.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jackson-core-2.10.5.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-io-2.8.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jetty-webapp-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/htrace-core4-4.1.0-incubating.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/curator-client-4.2.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/httpcore-4.4.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/snappy-java-1.1.8.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/hadoop-annotations-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/woodstox-core-5.3.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/avro-1.7.7.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jetty-io-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/hadoop-shaded-guava-1.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/stax2-api-4.2.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jetty-server-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jetty-util-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/okio-1.6.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/zookeeper-jute-3.5.6.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jetty-servlet-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jakarta.activation-api-1.2.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/curator-recipes-4.2.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/accessors-smart-2.4.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-codec-1.11.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/asm-5.0.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/paranamer-2.3.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jettison-1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-compress-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jackson-databind-2.10.5.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jetty-http-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-text-1.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jackson-annotations-2.10.5.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jsch-0.1.55.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/re2j-1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/gson-2.2.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jetty-xml-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/nimbus-jose-jwt-9.8.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/httpclient-4.5.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/netty-all-4.1.61.Final.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-net-3.6.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-lang3-3.7.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jsr305-3.0.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/jetty-security-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/json-smart-2.4.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/hdfs/lib/zookeeper-3.5.6.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-client-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-services-api-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-server-router-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-applications-mawo-core-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-services-core-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-server-common-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-common-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-api-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-server-tests-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-registry-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/javax.websocket-api-1.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jakarta.xml.bind-api-2.3.2.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jackson-jaxrs-base-2.10.5.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/aopalliance-1.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/asm-analysis-9.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/java-util-1.9.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/websocket-servlet-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/websocket-api-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/asm-tree-9.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jersey-client-1.19.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/objenesis-2.6.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.10.5.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jline-3.9.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jetty-annotations-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/websocket-client-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/asm-commons-9.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/fst-2.50.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/snakeyaml-1.26.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/websocket-common-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jetty-plus-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jetty-jndi-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/javax-websocket-server-impl-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/javax.websocket-client-api-1.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/javax-websocket-client-impl-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jetty-client-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jna-5.2.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/json-io-2.5.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/guice-4.0.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/javax.inject-1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.10.5.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/lib/websocket-server-9.4.40.v20210413.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.1-tests.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.3.1.jar:/Users/yangheewon/hadoop-3.3.1/share/hadoop/mapreduce/lib/*:job.jar/*:job.jar/classes/:job.jar/lib/*:/tmp/hadoop-yangheewon/nm-local-dir/usercache/yangheewon/appcache/application_1666524110537_0003/container_1666524110537_0003_01_000001/*
+java.io.tmpdir: /tmp/hadoop-yangheewon/nm-local-dir/usercache/yangheewon/appcache/application_1666524110537_0003/container_1666524110537_0003_01_000001/tmp
+user.dir: /private/tmp/hadoop-yangheewon/nm-local-dir/usercache/yangheewon/appcache/application_1666524110537_0003/container_1666524110537_0003_01_000001
+user.name: yangheewon
+************************************************************/
+2022-10-23 20:25:55,250 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-10-23 20:25:55,269 INFO [main] org.apache.hadoop.security.SecurityUtil: Updating Configuration
+2022-10-23 20:25:55,380 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Executing with tokens: [Kind: YARN_AM_RM_TOKEN, Service: , Ident: (appAttemptId { application_id { id: 3 cluster_timestamp: 1666524110537 } attemptId: 1 } keyId: 1365135573)]
+2022-10-23 20:25:55,409 INFO [main] org.apache.hadoop.conf.Configuration: resource-types.xml not found
+2022-10-23 20:25:55,409 INFO [main] org.apache.hadoop.yarn.util.resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-10-23 20:25:55,417 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Using mapred newApiCommitter.
+2022-10-23 20:25:55,419 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter set in config null
+2022-10-23 20:25:55,444 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2022-10-23 20:25:55,444 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2022-10-23 20:25:55,798 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2022-10-23 20:25:55,909 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+2022-10-23 20:25:55,909 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+2022-10-23 20:25:55,910 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskEventDispatcher
+2022-10-23 20:25:55,910 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+2022-10-23 20:25:55,911 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventType for class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler
+2022-10-23 20:25:55,914 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.speculate.Speculator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$SpeculatorEventDispatcher
+2022-10-23 20:25:55,915 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerAllocatorRouter
+2022-10-23 20:25:55,915 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerLauncherRouter
+2022-10-23 20:25:55,939 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://localhost:9000]
+2022-10-23 20:25:55,950 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://localhost:9000]
+2022-10-23 20:25:55,961 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://localhost:9000]
+2022-10-23 20:25:55,969 INFO [main] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Emitting job history data to the timeline server is not enabled
+2022-10-23 20:25:55,994 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+2022-10-23 20:25:56,142 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2022-10-23 20:25:56,202 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2022-10-23 20:25:56,202 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MRAppMaster metrics system started
+2022-10-23 20:25:56,210 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Adding job token for job_1666524110537_0003 to jobTokenSecretManager
+2022-10-23 20:25:56,306 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Not uberizing job_1666524110537_0003 because: not enabled;
+2022-10-23 20:25:56,317 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Input size for job job_1666524110537_0003 = 25. Number of splits = 1
+2022-10-23 20:25:56,318 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Number of reduces for job job_1666524110537_0003 = 1
+2022-10-23 20:25:56,318 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1666524110537_0003Job Transitioned from NEW to INITED
+2022-10-23 20:25:56,319 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: MRAppMaster launching normal, non-uberized, multi-container job job_1666524110537_0003.
+2022-10-23 20:25:56,335 INFO [main] org.apache.hadoop.ipc.CallQueueManager: Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 100, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2022-10-23 20:25:56,342 INFO [Socket Reader #1 for port 0] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 0
+2022-10-23 20:25:56,465 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+2022-10-23 20:25:56,466 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2022-10-23 20:25:56,466 INFO [IPC Server listener on 0] org.apache.hadoop.ipc.Server: IPC Server listener on 0: starting
+2022-10-23 20:25:56,467 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.mapreduce.v2.app.client.MRClientService: Instantiated MRClientService at localhost/127.0.0.1:56056
+2022-10-23 20:25:56,488 INFO [Listener at 0.0.0.0/56056] org.eclipse.jetty.util.log: Logging initialized @1993ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-10-23 20:25:56,555 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2022-10-23 20:25:56,557 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.mapreduce is not defined
+2022-10-23 20:25:56,560 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2022-10-23 20:25:56,581 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.http.HttpServer2: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context mapreduce
+2022-10-23 20:25:56,581 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.http.HttpServer2: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context static
+2022-10-23 20:25:56,845 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2022-10-23 20:25:56,846 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.http.HttpServer2: Jetty bound to port 56057
+2022-10-23 20:25:56,847 INFO [Listener at 0.0.0.0/56056] org.eclipse.jetty.server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 11.0.6+8-LTS
+2022-10-23 20:25:56,867 INFO [Listener at 0.0.0.0/56056] org.eclipse.jetty.server.session: DefaultSessionIdManager workerName=node0
+2022-10-23 20:25:56,867 INFO [Listener at 0.0.0.0/56056] org.eclipse.jetty.server.session: No SessionScavenger set, using defaults
+2022-10-23 20:25:56,868 INFO [Listener at 0.0.0.0/56056] org.eclipse.jetty.server.session: node0 Scavenging every 600000ms
+2022-10-23 20:25:56,877 INFO [Listener at 0.0.0.0/56056] org.eclipse.jetty.server.handler.ContextHandler: Started o.e.j.s.ServletContextHandler@6393bf8b{static,/static,jar:file:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-common-3.3.1.jar!/webapps/static,AVAILABLE}
+2022-10-23 20:25:57,572 INFO [Listener at 0.0.0.0/56056] org.eclipse.jetty.server.handler.ContextHandler: Started o.e.j.w.WebAppContext@77ce8bc5{mapreduce,/,file:///private/tmp/hadoop-yangheewon/nm-local-dir/usercache/yangheewon/appcache/application_1666524110537_0003/container_1666524110537_0003_01_000001/tmp/jetty-0_0_0_0-56057-hadoop-yarn-common-3_3_1_jar-_-any-16548560742589963780/webapp/,AVAILABLE}{jar:file:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-common-3.3.1.jar!/webapps/mapreduce}
+2022-10-23 20:25:57,579 INFO [Listener at 0.0.0.0/56056] org.eclipse.jetty.server.AbstractConnector: Started ServerConnector@11c713b7{HTTP/1.1, (http/1.1)}{0.0.0.0:56057}
+2022-10-23 20:25:57,580 INFO [Listener at 0.0.0.0/56056] org.eclipse.jetty.server.Server: Started @3084ms
+2022-10-23 20:25:57,580 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.yarn.webapp.WebApps: Web app mapreduce started at 56057
+2022-10-23 20:25:57,582 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: JOB_CREATE job_1666524110537_0003
+2022-10-23 20:25:57,584 INFO [Listener at 0.0.0.0/56056] org.apache.hadoop.ipc.CallQueueManager: Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 3000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2022-10-23 20:25:57,585 INFO [Socket Reader #1 for port 0] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 0
+2022-10-23 20:25:57,588 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2022-10-23 20:25:57,588 INFO [IPC Server listener on 0] org.apache.hadoop.ipc.Server: IPC Server listener on 0: starting
+2022-10-23 20:25:57,604 INFO [Listener at 0.0.0.0/56058] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: nodeBlacklistingEnabled:true
+2022-10-23 20:25:57,604 INFO [Listener at 0.0.0.0/56058] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: maxTaskFailuresPerNode is 3
+2022-10-23 20:25:57,604 INFO [Listener at 0.0.0.0/56058] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: blacklistDisablePercent is 33
+2022-10-23 20:25:57,606 INFO [Listener at 0.0.0.0/56058] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: 0% of the mappers will be scheduled using OPPORTUNISTIC containers
+2022-10-23 20:25:57,627 INFO [Listener at 0.0.0.0/56058] org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8030
+2022-10-23 20:25:57,674 INFO [Listener at 0.0.0.0/56058] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: maxContainerCapability: <memory:8192, vCores:4>
+2022-10-23 20:25:57,674 INFO [Listener at 0.0.0.0/56058] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: queue: default
+2022-10-23 20:25:57,676 INFO [Listener at 0.0.0.0/56058] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Upper limit on the thread pool size is 500
+2022-10-23 20:25:57,677 INFO [Listener at 0.0.0.0/56058] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: The thread pool initial size is 10
+2022-10-23 20:25:57,685 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1666524110537_0003Job Transitioned from INITED to SETUP
+2022-10-23 20:25:57,687 INFO [CommitterEvent Processor #0] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: JOB_SETUP
+2022-10-23 20:25:57,736 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1666524110537_0003Job Transitioned from SETUP to RUNNING
+2022-10-23 20:25:57,755 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Resource capability of task type MAP is set to <memory:1024, vCores:1>
+2022-10-23 20:25:57,761 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1666524110537_0003_m_000000 Task Transitioned from NEW to SCHEDULED
+2022-10-23 20:25:57,762 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Resource capability of task type REDUCE is set to <memory:1024, vCores:1>
+2022-10-23 20:25:57,762 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1666524110537_0003_r_000000 Task Transitioned from NEW to SCHEDULED
+2022-10-23 20:25:57,763 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2022-10-23 20:25:57,764 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_r_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2022-10-23 20:25:57,765 INFO [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: mapResourceRequest:<memory:1024, vCores:1>
+2022-10-23 20:25:57,775 INFO [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: reduceResourceRequest:<memory:1024, vCores:1>
+2022-10-23 20:25:57,788 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Event Writer setup for JobId: job_1666524110537_0003, File: hdfs://localhost:9000/tmp/hadoop-yarn/staging/yangheewon/.staging/job_1666524110537_0003/job_1666524110537_0003_1.jhist
+2022-10-23 20:25:58,681 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:0 ContRel:0 HostLocal:0 RackLocal:0
+2022-10-23 20:25:58,715 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1666524110537_0003: ask=3 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:6144, vCores:7> knownNMs=1
+2022-10-23 20:25:58,716 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:6144, vCores:7>
+2022-10-23 20:25:58,716 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2022-10-23 20:25:59,735 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2022-10-23 20:25:59,737 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1666524110537_0003_01_000002 to attempt_1666524110537_0003_m_000000_0
+2022-10-23 20:25:59,738 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:5120, vCores:6>
+2022-10-23 20:25:59,738 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2022-10-23 20:25:59,739 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:1 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:25:59,774 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Job jar is not present. Not adding any jar to the list of resources.
+2022-10-23 20:25:59,786 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: The job-conf file on the remote FS is /tmp/hadoop-yarn/staging/yangheewon/.staging/job_1666524110537_0003/job.xml
+2022-10-23 20:25:59,787 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Adding #0 tokens and #1 secret keys for NM use for launching container
+2022-10-23 20:25:59,787 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Size of containertokens_dob is 1
+2022-10-23 20:25:59,788 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Putting shuffle token in serviceData
+2022-10-23 20:25:59,805 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapred.JobConf: Task java-opts do not specify heap size. Setting task attempt jvm max heap size to -Xmx820m
+2022-10-23 20:25:59,807 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2022-10-23 20:25:59,810 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1666524110537_0003_01_000002 taskAttempt attempt_1666524110537_0003_m_000000_0
+2022-10-23 20:25:59,812 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1666524110537_0003_m_000000_0
+2022-10-23 20:25:59,872 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1666524110537_0003_m_000000_0 : 13562
+2022-10-23 20:25:59,874 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1666524110537_0003_m_000000_0] using containerId: [container_1666524110537_0003_01_000002 on NM: [localhost:55990]
+2022-10-23 20:25:59,876 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2022-10-23 20:25:59,877 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1666524110537_0003_m_000000
+2022-10-23 20:25:59,877 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1666524110537_0003_m_000000 Task Transitioned from SCHEDULED to RUNNING
+2022-10-23 20:26:00,742 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1666524110537_0003: ask=3 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:6> knownNMs=1
+2022-10-23 20:26:00,962 INFO [Socket Reader #1 for port 0] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1666524110537_0003 (auth:SIMPLE) from 127.0.0.1:56063
+2022-10-23 20:26:00,979 INFO [IPC Server handler 9 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1666524110537_0003_m_000002 asked for a task
+2022-10-23 20:26:00,980 INFO [IPC Server handler 9 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1666524110537_0003_m_000002 given task: attempt_1666524110537_0003_m_000000_0
+2022-10-23 20:26:01,574 INFO [IPC Server handler 7 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1666524110537_0003_m_000000_0 is : 0.0
+2022-10-23 20:26:01,587 ERROR [IPC Server handler 12 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1666524110537_0003_m_000000_0 - exited : java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:01,587 INFO [IPC Server handler 12 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_0: Error: java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:01,588 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_0: Error: java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:01,590 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_0 TaskAttempt Transitioned from RUNNING to FAIL_FINISHING_CONTAINER
+2022-10-23 20:26:01,596 INFO [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: 1 failures on node localhost
+2022-10-23 20:26:01,597 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+2022-10-23 20:26:01,616 INFO [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Added attempt_1666524110537_0003_m_000000_1 to list of failed maps
+2022-10-23 20:26:01,743 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:1 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:01,753 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1666524110537_0003: ask=1 release= 0 newContainers=0 finishedContainers=1 resourcelimit=<memory:6144, vCores:7> knownNMs=1
+2022-10-23 20:26:01,754 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1666524110537_0003_01_000002
+2022-10-23 20:26:01,754 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:6144, vCores:7>
+2022-10-23 20:26:01,754 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2022-10-23 20:26:01,754 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:1 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:01,754 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_0: 
+2022-10-23 20:26:01,754 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_0 transitioned from state FAIL_FINISHING_CONTAINER to FAILED, event type is TA_CONTAINER_COMPLETED and nodeId=localhost:55990
+2022-10-23 20:26:01,755 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_COMPLETED for container container_1666524110537_0003_01_000002 taskAttempt attempt_1666524110537_0003_m_000000_0
+2022-10-23 20:26:02,763 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2022-10-23 20:26:02,764 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigning container Container: [ContainerId: container_1666524110537_0003_01_000003, AllocationRequestId: -1, Version: 0, NodeId: localhost:55990, NodeHttpAddress: localhost:8042, Resource: <memory:1024, vCores:1>, Priority: 5, Token: Token { kind: ContainerToken, service: 127.0.0.1:55990 }, ExecutionType: GUARANTEED, ] to fast fail map
+2022-10-23 20:26:02,764 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned from earlierFailedMaps
+2022-10-23 20:26:02,765 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1666524110537_0003_01_000003 to attempt_1666524110537_0003_m_000000_1
+2022-10-23 20:26:02,765 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:5120, vCores:6>
+2022-10-23 20:26:02,765 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2022-10-23 20:26:02,765 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:02,767 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapred.JobConf: Task java-opts do not specify heap size. Setting task attempt jvm max heap size to -Xmx820m
+2022-10-23 20:26:02,768 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_1 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2022-10-23 20:26:02,768 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1666524110537_0003_01_000003 taskAttempt attempt_1666524110537_0003_m_000000_1
+2022-10-23 20:26:02,768 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1666524110537_0003_m_000000_1
+2022-10-23 20:26:02,781 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1666524110537_0003_m_000000_1 : 13562
+2022-10-23 20:26:02,782 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1666524110537_0003_m_000000_1] using containerId: [container_1666524110537_0003_01_000003 on NM: [localhost:55990]
+2022-10-23 20:26:02,782 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_1 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2022-10-23 20:26:02,782 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1666524110537_0003_m_000000
+2022-10-23 20:26:03,773 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1666524110537_0003: ask=1 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:6> knownNMs=1
+2022-10-23 20:26:03,836 INFO [Socket Reader #1 for port 0] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1666524110537_0003 (auth:SIMPLE) from 127.0.0.1:56067
+2022-10-23 20:26:03,845 INFO [IPC Server handler 9 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1666524110537_0003_m_000003 asked for a task
+2022-10-23 20:26:03,845 INFO [IPC Server handler 9 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1666524110537_0003_m_000003 given task: attempt_1666524110537_0003_m_000000_1
+2022-10-23 20:26:04,421 INFO [IPC Server handler 7 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1666524110537_0003_m_000000_1 is : 0.0
+2022-10-23 20:26:04,432 ERROR [IPC Server handler 12 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1666524110537_0003_m_000000_1 - exited : java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:04,432 INFO [IPC Server handler 12 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_1: Error: java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:04,432 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_1: Error: java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:04,433 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_1 TaskAttempt Transitioned from RUNNING to FAIL_FINISHING_CONTAINER
+2022-10-23 20:26:04,434 INFO [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: 2 failures on node localhost
+2022-10-23 20:26:04,434 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_2 TaskAttempt Transitioned from NEW to UNASSIGNED
+2022-10-23 20:26:04,434 INFO [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Added attempt_1666524110537_0003_m_000000_2 to list of failed maps
+2022-10-23 20:26:04,777 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:04,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1666524110537_0003: ask=1 release= 0 newContainers=0 finishedContainers=1 resourcelimit=<memory:6144, vCores:7> knownNMs=1
+2022-10-23 20:26:04,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1666524110537_0003_01_000003
+2022-10-23 20:26:04,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:6144, vCores:7>
+2022-10-23 20:26:04,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2022-10-23 20:26:04,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:04,781 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_1: 
+2022-10-23 20:26:04,782 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_1 transitioned from state FAIL_FINISHING_CONTAINER to FAILED, event type is TA_CONTAINER_COMPLETED and nodeId=localhost:55990
+2022-10-23 20:26:04,782 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_COMPLETED for container container_1666524110537_0003_01_000003 taskAttempt attempt_1666524110537_0003_m_000000_1
+2022-10-23 20:26:05,787 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2022-10-23 20:26:05,787 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigning container Container: [ContainerId: container_1666524110537_0003_01_000004, AllocationRequestId: -1, Version: 0, NodeId: localhost:55990, NodeHttpAddress: localhost:8042, Resource: <memory:1024, vCores:1>, Priority: 5, Token: Token { kind: ContainerToken, service: 127.0.0.1:55990 }, ExecutionType: GUARANTEED, ] to fast fail map
+2022-10-23 20:26:05,787 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned from earlierFailedMaps
+2022-10-23 20:26:05,788 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1666524110537_0003_01_000004 to attempt_1666524110537_0003_m_000000_2
+2022-10-23 20:26:05,788 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:5120, vCores:6>
+2022-10-23 20:26:05,788 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2022-10-23 20:26:05,788 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:3 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:05,790 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapred.JobConf: Task java-opts do not specify heap size. Setting task attempt jvm max heap size to -Xmx820m
+2022-10-23 20:26:05,790 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_2 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2022-10-23 20:26:05,791 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1666524110537_0003_01_000004 taskAttempt attempt_1666524110537_0003_m_000000_2
+2022-10-23 20:26:05,791 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1666524110537_0003_m_000000_2
+2022-10-23 20:26:05,803 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1666524110537_0003_m_000000_2 : 13562
+2022-10-23 20:26:05,803 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1666524110537_0003_m_000000_2] using containerId: [container_1666524110537_0003_01_000004 on NM: [localhost:55990]
+2022-10-23 20:26:05,804 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_2 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2022-10-23 20:26:05,804 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1666524110537_0003_m_000000
+2022-10-23 20:26:06,795 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1666524110537_0003: ask=1 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:6> knownNMs=1
+2022-10-23 20:26:06,885 INFO [Socket Reader #1 for port 0] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1666524110537_0003 (auth:SIMPLE) from 127.0.0.1:56070
+2022-10-23 20:26:06,895 INFO [IPC Server handler 7 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1666524110537_0003_m_000004 asked for a task
+2022-10-23 20:26:06,895 INFO [IPC Server handler 7 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1666524110537_0003_m_000004 given task: attempt_1666524110537_0003_m_000000_2
+2022-10-23 20:26:07,474 INFO [IPC Server handler 10 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1666524110537_0003_m_000000_2 is : 0.0
+2022-10-23 20:26:07,490 ERROR [IPC Server handler 6 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1666524110537_0003_m_000000_2 - exited : java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:07,490 INFO [IPC Server handler 6 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_2: Error: java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:07,491 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_2: Error: java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:07,491 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_2 TaskAttempt Transitioned from RUNNING to FAIL_FINISHING_CONTAINER
+2022-10-23 20:26:07,492 INFO [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: 3 failures on node localhost
+2022-10-23 20:26:07,492 INFO [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: Blacklisted host localhost
+2022-10-23 20:26:07,492 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_3 TaskAttempt Transitioned from NEW to UNASSIGNED
+2022-10-23 20:26:07,492 INFO [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Added attempt_1666524110537_0003_m_000000_3 to list of failed maps
+2022-10-23 20:26:07,797 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:3 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:07,803 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1666524110537_0003: ask=1 release= 0 newContainers=0 finishedContainers=1 resourcelimit=<memory:6144, vCores:7> knownNMs=1
+2022-10-23 20:26:07,803 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: Update the blacklist for application_1666524110537_0003: blacklistAdditions=1 blacklistRemovals=0
+2022-10-23 20:26:07,803 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: Ignore blacklisting set to true. Known: 1, Blacklisted: 1, 100%
+2022-10-23 20:26:07,804 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1666524110537_0003_01_000004
+2022-10-23 20:26:07,804 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:6144, vCores:7>
+2022-10-23 20:26:07,804 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2022-10-23 20:26:07,804 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_2: 
+2022-10-23 20:26:07,804 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:3 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:07,805 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_2 transitioned from state FAIL_FINISHING_CONTAINER to FAILED, event type is TA_CONTAINER_COMPLETED and nodeId=localhost:55990
+2022-10-23 20:26:07,805 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_COMPLETED for container container_1666524110537_0003_01_000004 taskAttempt attempt_1666524110537_0003_m_000000_2
+2022-10-23 20:26:08,814 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: Update the blacklist for application_1666524110537_0003: blacklistAdditions=0 blacklistRemovals=1
+2022-10-23 20:26:08,814 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:6144, vCores:7>
+2022-10-23 20:26:08,814 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2022-10-23 20:26:09,824 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2022-10-23 20:26:09,825 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigning container Container: [ContainerId: container_1666524110537_0003_01_000005, AllocationRequestId: -1, Version: 0, NodeId: localhost:55990, NodeHttpAddress: localhost:8042, Resource: <memory:1024, vCores:1>, Priority: 5, Token: Token { kind: ContainerToken, service: 127.0.0.1:55990 }, ExecutionType: GUARANTEED, ] to fast fail map
+2022-10-23 20:26:09,825 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned from earlierFailedMaps
+2022-10-23 20:26:09,825 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1666524110537_0003_01_000005 to attempt_1666524110537_0003_m_000000_3
+2022-10-23 20:26:09,825 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:5120, vCores:6>
+2022-10-23 20:26:09,825 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2022-10-23 20:26:09,825 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:09,827 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapred.JobConf: Task java-opts do not specify heap size. Setting task attempt jvm max heap size to -Xmx820m
+2022-10-23 20:26:09,828 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_3 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2022-10-23 20:26:09,829 INFO [ContainerLauncher #6] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1666524110537_0003_01_000005 taskAttempt attempt_1666524110537_0003_m_000000_3
+2022-10-23 20:26:09,829 INFO [ContainerLauncher #6] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1666524110537_0003_m_000000_3
+2022-10-23 20:26:09,841 INFO [ContainerLauncher #6] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1666524110537_0003_m_000000_3 : 13562
+2022-10-23 20:26:09,841 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1666524110537_0003_m_000000_3] using containerId: [container_1666524110537_0003_01_000005 on NM: [localhost:55990]
+2022-10-23 20:26:09,842 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_3 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2022-10-23 20:26:09,842 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1666524110537_0003_m_000000
+2022-10-23 20:26:10,830 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1666524110537_0003: ask=1 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:6> knownNMs=1
+2022-10-23 20:26:10,979 INFO [Socket Reader #1 for port 0] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1666524110537_0003 (auth:SIMPLE) from 127.0.0.1:56073
+2022-10-23 20:26:10,989 INFO [IPC Server handler 12 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1666524110537_0003_m_000005 asked for a task
+2022-10-23 20:26:10,989 INFO [IPC Server handler 12 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1666524110537_0003_m_000005 given task: attempt_1666524110537_0003_m_000000_3
+2022-10-23 20:26:11,838 INFO [IPC Server handler 9 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1666524110537_0003_m_000000_3 is : 0.0
+2022-10-23 20:26:11,850 ERROR [IPC Server handler 7 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1666524110537_0003_m_000000_3 - exited : java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:11,850 INFO [IPC Server handler 7 on default port 56058] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_3: Error: java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:11,851 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_3: Error: java.lang.RuntimeException: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2667)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:187)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:760)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: java.lang.ClassNotFoundException: Class com.example.WordCount$Map not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2571)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2665)
+	... 8 more
+
+2022-10-23 20:26:11,851 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_3 TaskAttempt Transitioned from RUNNING to FAIL_FINISHING_CONTAINER
+2022-10-23 20:26:11,854 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1666524110537_0003_m_000000 Task Transitioned from RUNNING to FAILED
+2022-10-23 20:26:11,854 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Num completed Tasks: 1
+2022-10-23 20:26:11,854 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Job failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0
+2022-10-23 20:26:11,855 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1666524110537_0003Job Transitioned from RUNNING to FAIL_WAIT
+2022-10-23 20:26:11,855 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1666524110537_0003_r_000000 Task Transitioned from SCHEDULED to KILL_WAIT
+2022-10-23 20:26:11,856 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_r_000000_0 TaskAttempt Transitioned from UNASSIGNED to KILLED
+2022-10-23 20:26:11,856 INFO [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Processing the event EventType: CONTAINER_DEALLOCATE
+2022-10-23 20:26:11,856 ERROR [Thread-55] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Could not deallocate container for task attemptId attempt_1666524110537_0003_r_000000_0
+2022-10-23 20:26:11,856 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1666524110537_0003_r_000000 Task Transitioned from KILL_WAIT to KILLED
+2022-10-23 20:26:11,857 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1666524110537_0003Job Transitioned from FAIL_WAIT to FAIL_ABORT
+2022-10-23 20:26:11,857 INFO [CommitterEvent Processor #1] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: JOB_ABORT
+2022-10-23 20:26:11,891 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1666524110537_0003Job Transitioned from FAIL_ABORT to FAILED
+2022-10-23 20:26:11,892 INFO [Thread-70] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Job finished cleanly, recording last MRAppMaster retry
+2022-10-23 20:26:11,892 INFO [Thread-70] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify RMCommunicator isAMLastRetry: true
+2022-10-23 20:26:11,892 INFO [Thread-70] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: RMCommunicator notified that shouldUnregistered is: true
+2022-10-23 20:26:11,892 INFO [Thread-70] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify JHEH isAMLastRetry: true
+2022-10-23 20:26:11,892 INFO [Thread-70] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: JobHistoryEventHandler notified that forceJobCompletion is true
+2022-10-23 20:26:11,892 INFO [Thread-70] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Calling stop for all the services
+2022-10-23 20:26:11,893 INFO [Thread-70] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopping JobHistoryEventHandler. Size of the outstanding queue size is 0
+2022-10-23 20:26:12,071 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copying hdfs://localhost:9000/tmp/hadoop-yarn/staging/yangheewon/.staging/job_1666524110537_0003/job_1666524110537_0003_1.jhist to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/yangheewon/job_1666524110537_0003-1666524353387-yangheewon-WordCount-1666524371854-0-0-FAILED-default-1666524357680.jhist_tmp
+2022-10-23 20:26:12,310 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copied from: hdfs://localhost:9000/tmp/hadoop-yarn/staging/yangheewon/.staging/job_1666524110537_0003/job_1666524110537_0003_1.jhist to done location: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/yangheewon/job_1666524110537_0003-1666524353387-yangheewon-WordCount-1666524371854-0-0-FAILED-default-1666524357680.jhist_tmp
+2022-10-23 20:26:12,312 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Set historyUrl to http://localhost:19888/jobhistory/job/job_1666524110537_0003
+2022-10-23 20:26:12,314 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copying hdfs://localhost:9000/tmp/hadoop-yarn/staging/yangheewon/.staging/job_1666524110537_0003/job_1666524110537_0003_1_conf.xml to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/yangheewon/job_1666524110537_0003_conf.xml_tmp
+2022-10-23 20:26:12,837 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:12,845 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copied from: hdfs://localhost:9000/tmp/hadoop-yarn/staging/yangheewon/.staging/job_1666524110537_0003/job_1666524110537_0003_1_conf.xml to done location: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/yangheewon/job_1666524110537_0003_conf.xml_tmp
+2022-10-23 20:26:12,849 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1666524110537_0003_01_000005
+2022-10-23 20:26:12,849 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:6144, vCores:7>
+2022-10-23 20:26:12,849 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold reached. Scheduling reduces.
+2022-10-23 20:26:12,849 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1666524110537_0003_m_000000_3: 
+2022-10-23 20:26:12,849 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: All maps assigned. Ramping up all remaining reduces:1
+2022-10-23 20:26:12,850 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1666524110537_0003_m_000000_3 transitioned from state FAIL_FINISHING_CONTAINER to FAILED, event type is TA_CONTAINER_COMPLETED and nodeId=localhost:55990
+2022-10-23 20:26:12,850 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:1 AssignedMaps:0 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:12,851 INFO [ContainerLauncher #7] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_COMPLETED for container container_1666524110537_0003_01_000005 taskAttempt attempt_1666524110537_0003_m_000000_3
+2022-10-23 20:26:12,873 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/yangheewon/job_1666524110537_0003.summary_tmp to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/yangheewon/job_1666524110537_0003.summary
+2022-10-23 20:26:12,896 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/yangheewon/job_1666524110537_0003_conf.xml_tmp to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/yangheewon/job_1666524110537_0003_conf.xml
+2022-10-23 20:26:12,919 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/yangheewon/job_1666524110537_0003-1666524353387-yangheewon-WordCount-1666524371854-0-0-FAILED-default-1666524357680.jhist_tmp to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/yangheewon/job_1666524110537_0003-1666524353387-yangheewon-WordCount-1666524371854-0-0-FAILED-default-1666524357680.jhist
+2022-10-23 20:26:12,920 INFO [Thread-70] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopped JobHistoryEventHandler. super.stop()
+2022-10-23 20:26:12,923 INFO [Thread-70] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: Setting job diagnostics to Task failed task_1666524110537_0003_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0
+
+2022-10-23 20:26:12,923 INFO [Thread-70] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: History url is http://localhost:19888/jobhistory/job/job_1666524110537_0003
+2022-10-23 20:26:12,929 INFO [Thread-70] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: Waiting for application to be successfully unregistered.
+2022-10-23 20:26:13,935 INFO [Thread-70] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Final Stats: PendingReds:0 ScheduledMaps:0 ScheduledReds:1 AssignedMaps:0 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:1 RackLocal:0
+2022-10-23 20:26:13,937 INFO [Thread-70] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Deleting staging directory hdfs://localhost:9000/ /tmp/hadoop-yarn/staging/yangheewon/.staging/job_1666524110537_0003
+2022-10-23 20:26:13,960 INFO [Thread-70] org.apache.hadoop.ipc.Server: Stopping server on 56058
+2022-10-23 20:26:13,962 INFO [IPC Server listener on 0] org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 0
+2022-10-23 20:26:13,963 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2022-10-23 20:26:13,964 INFO [TaskHeartbeatHandler PingChecker] org.apache.hadoop.mapreduce.v2.app.TaskHeartbeatHandler: TaskHeartbeatHandler thread interrupted
+2022-10-23 20:26:13,965 INFO [Ping Checker for TaskAttemptFinishingMonitor] org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: TaskAttemptFinishingMonitor thread interrupted
+2022-10-23 20:26:18,968 INFO [Thread-70] org.apache.hadoop.ipc.Server: Stopping server on 56056
+2022-10-23 20:26:18,969 INFO [IPC Server listener on 0] org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 0
+2022-10-23 20:26:18,969 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2022-10-23 20:26:18,976 INFO [Thread-70] org.eclipse.jetty.server.handler.ContextHandler: Stopped o.e.j.w.WebAppContext@77ce8bc5{mapreduce,/,null,STOPPED}{jar:file:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-common-3.3.1.jar!/webapps/mapreduce}
+2022-10-23 20:26:18,983 INFO [Thread-70] org.eclipse.jetty.server.AbstractConnector: Stopped ServerConnector@11c713b7{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+2022-10-23 20:26:18,983 INFO [Thread-70] org.eclipse.jetty.server.session: node0 Stopped scavenging
+2022-10-23 20:26:18,984 INFO [Thread-70] org.eclipse.jetty.server.handler.ContextHandler: Stopped o.e.j.s.ServletContextHandler@6393bf8b{static,/static,jar:file:/Users/yangheewon/hadoop-3.3.1/share/hadoop/yarn/hadoop-yarn-common-3.3.1.jar!/webapps/static,STOPPED}

@@ -1,0 +1,21 @@
+ls -l:
+total 40
+-rw-r--r--  1 yangheewon  wheel   129 10 23 20:26 container_tokens
+-rwx------  1 yangheewon  wheel   753 10 23 20:26 default_container_executor.sh
+-rwx------  1 yangheewon  wheel   691 10 23 20:26 default_container_executor_session.sh
+lrwxr-xr-x  1 yangheewon  wheel   117 10 23 20:26 job.xml -> /tmp/hadoop-yangheewon/nm-local-dir/usercache/yangheewon/appcache/application_1666524110537_0003/filecache/12/job.xml
+-rwx------  1 yangheewon  wheel  5351 10 23 20:26 launch_container.sh
+drwx--x---  2 yangheewon  wheel    64 10 23 20:26 tmp
+find -L . -maxdepth 5 -ls:
+50222545        0 drwx--x---   12 yangheewon       wheel                 384 10 23 20:26 .
+50222550       16 -rwx------    1 yangheewon       wheel                5351 10 23 20:26 ./launch_container.sh
+50222552        8 -rwx------    1 yangheewon       wheel                 691 10 23 20:26 ./default_container_executor_session.sh
+50222549        8 -rw-r--r--    1 yangheewon       wheel                  12 10 23 20:26 ./.container_tokens.crc
+50222548        8 -rw-r--r--    1 yangheewon       wheel                 129 10 23 20:26 ./container_tokens
+50222551        8 -rw-r--r--    1 yangheewon       wheel                  52 10 23 20:26 ./.launch_container.sh.crc
+50222554        8 -rwx------    1 yangheewon       wheel                 753 10 23 20:26 ./default_container_executor.sh
+50222553        8 -rw-r--r--    1 yangheewon       wheel                  16 10 23 20:26 ./.default_container_executor_session.sh.crc
+50222403      456 -r-x------    1 yangheewon       wheel              233218 10 23 20:25 ./job.xml
+50222547        0 drwx--x---    2 yangheewon       wheel                  64 10 23 20:26 ./tmp
+50222555        8 -rw-r--r--    1 yangheewon       wheel                  16 10 23 20:26 ./.default_container_executor.sh.crc
+broken symlinks(find -L . -maxdepth 5 -type l -ls):
